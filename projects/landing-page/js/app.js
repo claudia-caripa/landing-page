@@ -63,9 +63,9 @@ function highlightSection() {
             bounding.right <= (window.innerWidth || document.documentElement.clientWidth) &&
             bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight)
         ){
-            name.className = "your-active-class";
+            name.classList.add("your-active-class");
         } else {
-            name.className = "";
+            name.classList.remove("your-active-class");
         }
 
     });
